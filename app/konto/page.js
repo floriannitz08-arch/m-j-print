@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function Account(){return <main><Link href="/">← Zum Shop</Link><h1>Mein Konto</h1><p>Der Kundenbereich ist vorbereitet. Registrierung und Anmeldung werden erst nach Einrichtung des Authentifizierungsdienstes aktiviert.</p><h2>Meine Bestellungen</h2><p>Bitte später mit einem Kundenkonto anmelden.</p></main>}
