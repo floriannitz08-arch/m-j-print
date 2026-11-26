@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function Legal(){return <main><Link href="/">← Zum Shop</Link><h1>Rechtliche Informationen</h1><p>Private Entwicklungsvorschau. Kein Verkauf.</p>{['Impressum','Datenschutz','AGB','Widerrufsbelehrung','Versand und Zahlung'].map(n=><section key={n}><h2>{n}</h2><p>Vor Verkaufsfreigabe mit den tatsächlichen Betreiber- und Vertragsinformationen zu vervollständigen und zu prüfen.</p></section>)}</main>}
