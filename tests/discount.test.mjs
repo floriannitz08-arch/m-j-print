@@ -1,0 +1,1 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {discountCents} from '../lib/discount.mjs';test('rounding',()=>assert.equal(discountCents(999,10),100));test('invalid',()=>assert.throws(()=>discountCents(100,101)));test('zero',()=>assert.equal(discountCents(100,0),0));
