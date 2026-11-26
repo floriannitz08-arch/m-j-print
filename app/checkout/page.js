@@ -1,0 +1,5 @@
+'use client';
+import {useState,useEffect} from 'react';
+import Link from 'next/link';
+import {euro} from '../catalog';
+export default function Checkout(){const [cart,C]=useState([]),[ready,R]=useState(false);useEffect(()=>{try{C(JSON.parse(localStorage.getItem('mj-cart')||'[]'))}catch{}},[]);return <main><Link href="/warenkorb">← Warenkorb</Link><h1>Bestellübersicht</h1><p>Private Vorschau – keine Bestellung wird ausgelöst.</p>{cart.map((p,i)=><p key={i}>{p.name} · {p.qty} Stück · {euro(p.price)}</p>)}<h2>Zwischensumme: {euro(cart.reduce((s,p)=>s+p.price,0))}</h2><form onSubmit={e=>{e.preventDefault();R(true)}} className="checkout-form"><h2>Lieferadresse (nur Vorschau)</h2>{['Vorname','Nachname','Straße und Hausnummer','Postleitzahl','Ort'].map(n=><label key={n}>{n}<input required autoComplete="off"/></label>)}<label>Land<select><option>Deutschland</option></select></label><button className="gold" disabled={!cart.length}>Vorschau prüfen</button></form>{ready&&<p role="status">Vorschau geprüft. Versandkosten, Steuern und Zahlungsdienst sind noch nicht angebunden. Keine Daten wurden übertragen.</p>}</main>}
