@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function Admin(){return <main><Link href="/">← Zum Shop</Link><h1>Shopverwaltung</h1><p>Entwicklungsansicht ohne Kundendaten. Verwaltungsfunktionen bleiben deaktiviert, bis serverseitige Rollenprüfung eingerichtet ist.</p><div className="grid">{['Produkte','Bestellungen','Druckdaten','Kunden','Versand','Gutscheine'].map(n=><article key={n}><h2>{n}</h2><p>Backend-Anbindung ausstehend</p></article>)}</div></main>}
