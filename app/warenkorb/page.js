@@ -1,0 +1,5 @@
+'use client';
+import {useEffect,useState} from 'react';
+import Link from 'next/link';
+import {euro} from '../catalog';
+export default function Cart(){const [cart,C]=useState([]);useEffect(()=>{try{C(JSON.parse(localStorage.getItem('mj-cart')||'[]'))}catch{C([])}},[]);function remove(i){const next=cart.filter((_,j)=>i!==j);C(next);localStorage.setItem('mj-cart',JSON.stringify(next))}return <main><Link href="/">← Weiter einkaufen</Link><h1>Warenkorb</h1>{cart.length===0?<p>Dein Warenkorb ist leer.</p>:cart.map((p,i)=><article key={i}><h3>{p.name}</h3><p>{p.qty} Stück · {p.finish} · {euro(p.price)}</p>{p.file&&<p>Dateiname: {p.file} (Datei nicht übertragen)</p>}<button onClick={()=>remove(i)}>Entfernen</button></article>)}<h2>Gesamt: {euro(cart.reduce((s,p)=>s+p.price,0))}</h2><p>Entwicklungsmodus: Bestellungen und Zahlungen sind deaktiviert.</p></main>}
