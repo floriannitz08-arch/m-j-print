@@ -12,3 +12,6 @@ Vor Vertragsschluss Gesamtpreis inklusive Steuern, Druckumfang, Versandkosten, L
 
 ## Offene Freigaben
 Preis inklusive MwSt. und Druck? Versand oder Abholung? Druckverfahren, Größen/Farben, Mindestmengen und Lieferzeiten? Rechtliche Prüfung und Live-Browsertest erforderlich.
+
+## Bestätigte Angaben
+Geschäftsführer: Mads Kristensen und Jan Hendrik Naß. Registergericht: Amtsgericht Flensburg. Alle Ab-Preise inklusive gesetzlicher Mehrwertsteuer und Textildruck. Abholung und Versand möglich. E-Mail, HRB und USt-ID (falls vorhanden) weiterhin offen. Versandkosten und Bedingungen noch zu klären.
