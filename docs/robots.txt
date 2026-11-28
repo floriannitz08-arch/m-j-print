@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://floriannitz08-arch.github.io/m-j-print/sitemap.xml
